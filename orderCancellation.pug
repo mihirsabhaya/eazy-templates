@@ -115,9 +115,10 @@ head
   - var customer_new_email_address = 'qureshi.abram@gmail.com'
   - var customer_id = '123456789A'
   - var verify_email_link = '#'
+  - var order_number = '1234567890'
+  - var cancelation_reason = 'Provide a brief explanation of the reason for the cancellation'
   - var booking_id = 'Pd112412120125'
   - var booking_date = 'Fri, Jan 11, 2021'
-
 
 
 table.nl-container(width='100%' border='0' cellpadding='0' cellspacing='0' role='presentation' style='mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #FFFFFF;')
@@ -148,7 +149,7 @@ table.nl-container(width='100%' border='0' cellpadding='0' cellspacing='0' role=
                                 p(style='margin: 0;font-size:22px;')
                                   | Dear #{customer_firstname}
                                 p(style="font-size:14px;margin-bottom:0")
-                                  | Thank you for choosing Eazy Services for your service needs. We are delighted to confirm that your service order has been successfully placed.
+                                  | Seems like your service order ##{order_number} has been canceled. We apologize for any inconvenience this may cause and appreciate your understanding.
         table.row.row-3(align='center' width='100%' border='0' cellpadding='0' cellspacing='0' role='presentation' style='mso-table-lspace: 0pt; mso-table-rspace: 0pt;')
           tbody
             tr
@@ -260,15 +261,11 @@ table.nl-container(width='100%' border='0' cellpadding='0' cellspacing='0' role=
                                                       td :
                                                       td(style="display:inline-block;font-weight:bold;width:100%;text-align:right;") $100.00
                                                 td(style="width:10%")
-                                                td.amontDueContainer(style="vertical-align:top;width:40%;")
-                                                  table(style="width:100%;color:#333333;vertical-align:top;") 
+                                                td.amontDueContainer(style="vertical-align:bottom;width:40%;")
+                                                  table(style="width:100%;color:#333333;vertical-align:bottom;") 
                                                     tbody 
                                                       tr 
-                                                        h6(style="color:#949CBC;margin-bottom:15px;font-size:10px") AMOUNT DUE
-                                                      tr 
-                                                        td(style="display:inline-block;font-weight:bold;width:100%;") Cash
-                                                        td :
-                                                        td(style="display:inline-block;font-weight:bold;width:100%;text-align:right;") $150.00
+                                                        div(style="color:#949CBC;font-size:10px;color:#0BB13E;border:1px solid #0BB13E;background-color:#0BB13E1F;padding:10px;border-radius:8px;") Money will refund to original payment method
 
 
                                           
@@ -287,13 +284,14 @@ table.nl-container(width='100%' border='0' cellpadding='0' cellspacing='0' role=
                           tr
                             td(style="padding:20px 40px;")
                               div(style="background-color:#F4F6FD;color#242A4B;font-size:14px;font-weight:400;padding:20px;border-radius:15px;")
-                                p(style='margin: 0;')
-                                  | Our team of highly skilled professionals will be assigned to handle your service request. Rest assured that we will strive to deliver exceptional service and address your needs promptly.
+                                p(style='margin: 0;color:#EF084F;font-weight:bold;')
+                                  | Cancellation Reason: #{cancelation_reason}
+                                p(style='margin: 0;margin-top:20px;')
+                                  | If you have made any payments towards the canceled service order, rest assured that a refund will be processed promptly.
                                 p(style='margin-bottom: 0;margin-top:20px;')
-                                  | Once the service is completed, you will receive a service report detailing the work carried out and any additional information you may need.
-                                p(style='margin-bottom: 0;margin-top:20px;')
-                                  | We value your trust in our services and are committed to providing you with a seamless experience. If you have any questions or need further assistance, please do not hesitate to reach out to us.
-                              p(style="font-size:14px;color:#333333") Thank You for choosing eazy services. We appreciate your prompt action in resetting your password to ensure the security of your account.
+                                  | If you have any further questions or need assistance, please do not hesitate to reach out to us. We value your satisfaction and are committed to resolving any concerns you may have.
+
+                              p(style="font-size:14px;color:#333333") Thank you for considering Eazy Services for your service needs.
                               p(style="font-size:14px;margin-bottom:0;color:#333333;") Best Regards,
                                 br
                                 | Team Eazy
