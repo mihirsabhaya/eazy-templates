@@ -109,14 +109,16 @@ head
     }
     }
   
-  - var customer_firstname = 'Abram'
-  - var customer_lastname = 'Qureshi'
+  - var business_owner_firstname = 'Abram'
+  - var business_owner_lastname = 'Qureshi'
   - var customer_previous_email_address = 'abram.qureshi@gmail.com'
   - var customer_new_email_address = 'qureshi.abram@gmail.com'
   - var customer_id = '123456789A'
   - var verify_email_link = '#'
   - var booking_id = 'Pd112412120125'
   - var booking_date = 'Fri, Jan 11, 2021'
+  - var customer_support_email = 'support@gmail.com'
+  - var customer_support_phone = '1234567890'
 
 
 
@@ -136,7 +138,7 @@ table.nl-container(width='100%' border='0' cellpadding='0' cellspacing='0' role=
                           tr
                             td(style='width:100%;padding:0px;padding-top:5px;padding-bottom:5px;')
                               div(style='line-height:10px')
-                                img(src='./images/eazy_logo2.svg' style='display: block; height: auto; border: 0; width: 110px; max-width: 100%;' width='27' alt='image' title='image')
+                                img(src='./images/staffLogo.svg' style='display: block; height: auto; border: 0; width: 110px; max-width: 100%;' width='27' alt='image' title='image')
                             td 
                               div(style="text-align:right;") 
                                 p(style="white-space:nowrap;margin:0;font-size:12px;") Booking Id : #{booking_id}
@@ -146,9 +148,9 @@ table.nl-container(width='100%' border='0' cellpadding='0' cellspacing='0' role=
                             td(style="padding:0")
                               div(style="padding-top:25px;font-weight:400;line-height:120%;text-align:left;direction:ltr;letter-spacing:0px;")
                                 p(style='margin: 0;font-size:22px;')
-                                  | Dear #{customer_firstname}
+                                  | Dear #{business_owner_firstname}
                                 p(style="font-size:14px;margin-bottom:0")
-                                  | Thank you for choosing Eazy Services for your service needs. We are delighted to confirm that your service order has been successfully placed.
+                                  | We are pleased to inform you that a new service order has been received. Please review the order details below and take the necessary actions to ensure a smooth and successful order fulfillment process.
         table.row.row-3(align='center' width='100%' border='0' cellpadding='0' cellspacing='0' role='presentation' style='mso-table-lspace: 0pt; mso-table-rspace: 0pt;')
           tbody
             tr
@@ -165,14 +167,27 @@ table.nl-container(width='100%' border='0' cellpadding='0' cellspacing='0' role=
                                     tr 
                                       td.placeOfServiceContainer(style="width:45%") 
                                         div(style="height:100%;width:100%;border:1px solid #C0DAF5;border-radius:12px;padding:20px;")
+
                                           div(style="color:#000;font-size:14px;font-weight:400;")
-                                            h6(style="color:#949CBC;font-size:10px;margin-top:0;margin-bottom:8px;") PLACE OF SERVICE
-                                            p(style="font-size:12px;margin:0") 10th Cross St, RBI Colony, Bengaluru, Karnataka 560024
-                                          div(style="margin-top:25px;") 
                                             h6(style="color:#949CBC;font-size:10px;margin-top:0;margin-bottom:8px;") APPOINTMENT TYPE
                                             div(style="padding:8px 10px;background-color:#DBE1F8;color:#1B47DB;text-transform:uppercase;font-weight:bold;font-size:12px;width:max-content;border-radius:5px;display:inline-block") single
                                             div(style="padding:8px 10px;background-color:#DBE1F8;color:#1B47DB;text-transform:uppercase;font-weight:bold;font-size:12px;width:max-content;border-radius:5px;display:inline-block;margin:0 10px;") IN-CALL
                                             div(style="padding:8px 10px;background-color:#DBE1F8;color:#1B47DB;text-transform:uppercase;font-weight:bold;font-size:12px;width:max-content;border-radius:5px;display:inline-block") ASAP
+                                        
+                                          div(style="margin-top:25px;") 
+                                            h6(style="color:#949CBC;font-size:10px;margin-top:0;margin-bottom:8px;") CUSTOMER INFORMATION
+                                            div(style="display:inline-block")
+                                              img(style="height:50px;width:50px;border-radius:5px;border:0;" src="./images/mobile.png"  )
+                                            div(style="display:inline-block;vertical-align:top;padding-left:8px;")
+                                              p(style="color:#333333;font-size:14px;margin:0;line-height:18px;") Anthony Mosis
+                                              p(style="color:#9CA2C6;font-size:12px;margin:0;line-height:18px;") anthony.mosis@gmail.com
+                                              p(style="color:#9CA2C6;font-size:12px;margin:0;") +91 94939 61244
+                                            //- div(style="padding:8px 10px;background-color:#DBE1F8;color:#1B47DB;text-transform:uppercase;font-weight:bold;font-size:12px;width:max-content;border-radius:5px;display:inline-block") single
+                                            //- div(style="padding:8px 10px;background-color:#DBE1F8;color:#1B47DB;text-transform:uppercase;font-weight:bold;font-size:12px;width:max-content;border-radius:5px;display:inline-block;margin:0 10px;") IN-CALL
+                                            //- div(style="padding:8px 10px;background-color:#DBE1F8;color:#1B47DB;text-transform:uppercase;font-weight:bold;font-size:12px;width:max-content;border-radius:5px;display:inline-block") ASAP
+                                          div(style="color:#000;font-size:14px;font-weight:400;margin-top:25px")
+                                            h6(style="color:#949CBC;font-size:10px;margin-top:0;margin-bottom:8px;") PLACE OF SERVICE
+                                            p(style="font-size:12px;margin:0") 10th Cross St, RBI Colony, Bengaluru, Karnataka 560024
                                           div(style="color:#000;font-size:14px;font-weight:400;margin-top:25px;")
                                             h6(style="color:#949CBC;font-size:10px;margin-top:0;margin-bottom:8px;") PAYMENT PREFERENCE
                                             div 
@@ -197,12 +212,12 @@ table.nl-container(width='100%' border='0' cellpadding='0' cellspacing='0' role=
                                             p(style="color:#9CA2C6;font-size:10px;margin-top:0px;") 1 Bhk
                                             div(style="display:inline-block;width:100%") 
                                               div(style="text-align:left;display:inline-block;width:50%;") 1 x $100.00
-                                              div(style="text-align:right;display:inline-block;width:50%;") 1 x $100.00
+                                              div(style="text-align:right;display:inline-block;width:50%;")  $100.00
                                           div(style="color:#242A4B;")
                                             p(style="margin-bottom:0px;margin-top:13px;margin-bottom:5px") Occupied kitchen cleaning with appliancess
                                             div(style="display:inline-block;width:100%") 
                                               div(style="text-align:left;display:inline-block;width:50%;") 1 x $100.00
-                                              div(style="text-align:right;display:inline-block;width:50%;") 1 x $100.00
+                                              div(style="text-align:right;display:inline-block;width:50%;") $100.00
                                           div(style="height:1px;background-color:#C0DAF5;margin:15px 0px")
                                           table(style="width:100%;color:#333333") 
                                             tbody 
@@ -214,7 +229,7 @@ table.nl-container(width='100%' border='0' cellpadding='0' cellspacing='0' role=
                                                       tr 
                                                         td(style="display:inline-block;width:100%;") Sub Total ( Incl Tax )
                                                         td :
-                                                        td(style="display:inline-block;text-align:right;width:100%;") $200.00
+                                                        td(style="display:inline-block;text-align:right;width:100%;") $100.00
                                                       tr 
                                                         td(style="display:inline-block;width:100%;") Promo Code
                                                         td :
@@ -238,7 +253,7 @@ table.nl-container(width='100%' border='0' cellpadding='0' cellspacing='0' role=
                                                       tr 
                                                         td(style="display:inline-block;font-weight:bold;width:100%;") Amount Charged
                                                         td :
-                                                        td(style="display:inline-block;font-weight:bold;width:100%;") $250.00
+                                                        td(style="display:inline-block;font-weight:bold;width:100%;") $150.00
                                           table(style="width:100%") 
                                             tbody 
                                               tr  
@@ -247,14 +262,6 @@ table.nl-container(width='100%' border='0' cellpadding='0' cellspacing='0' role=
                                                     tbody   
                                                     tr 
                                                         h6(style="color:#949CBC;margin-bottom:15px;font-size:10px") PAYMENT BREAKDOWN
-                                                    tr 
-                                                      td(style="display:inline-block;font-weight:bold;width:100%;padding-bottom:5px;") Card ending 4343
-                                                      td :
-                                                      td(style="display:inline-block;font-weight:bold;width:100%;text-align:right;") $40.00
-                                                    tr 
-                                                      td(style="display:inline-block;font-weight:bold;width:100%;padding-bottom:5px;") Wallet
-                                                      td :
-                                                      td(style="display:inline-block;font-weight:bold;width:100%;text-align:right;") $60.00
                                                     tr 
                                                       td(style="display:inline-block;font-weight:bold;width:100%;padding-bottom:5px;") Partial Payment
                                                       td :
@@ -286,14 +293,14 @@ table.nl-container(width='100%' border='0' cellpadding='0' cellspacing='0' role=
                         table.paragraph_block(width='100%' border='0' cellpadding='10' cellspacing='0' role='presentation' style='mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;')
                           tr
                             td(style="padding:20px 40px;")
-                              div(style="background-color:#F4F6FD;color#242A4B;font-size:14px;font-weight:400;padding:20px;border-radius:15px;")
+                              div(style="background-color:#F4F6FD;color#242A4B;font-size:13px;font-weight:400;padding:20px;border-radius:15px;")
                                 p(style='margin: 0;')
-                                  | Our team of highly skilled professionals will be assigned to handle your service request. Rest assured that we will strive to deliver exceptional service and address your needs promptly.
+                                  | Please review the order details carefully and ensure that all necessary resources, inventory, or equipment are available to fulfill the order on time. Take note of any special instructions or requirements provided by the customer.
                                 p(style='margin-bottom: 0;margin-top:20px;')
-                                  | Once the service is completed, you will receive a service report detailing the work carried out and any additional information you may need.
+                                  | Assigned team members or staff are requested to take immediate action to prepare the service order.
                                 p(style='margin-bottom: 0;margin-top:20px;')
-                                  | We value your trust in our services and are committed to providing you with a seamless experience. If you have any questions or need further assistance, please do not hesitate to reach out to us.
-                              p(style="font-size:14px;color:#333333") Thank You for choosing eazy services. We appreciate your prompt action in resetting your password to ensure the security of your account.
+                                  | If you have any questions or require clarification regarding the order, please reach out to the customer directly or contact our customer support team at #{customer_support_email}/#{customer_support_phone}.
+                              p(style="font-size:14px;color:#333333")  Thank you for your cooperation and commitment to maintaining our high service standards. 
                               p(style="font-size:14px;margin-bottom:0;color:#333333;") Best Regards,
                                 br
                                 | Team Eazy
@@ -310,7 +317,7 @@ table.nl-container(width='100%' border='0' cellpadding='0' cellspacing='0' role=
                           tr
                             td(style='padding:0px;')
                               div(style='line-height:10px')
-                                img(src='./images/eazy_logo2.svg' style='display: block; height: auto; border: 0; width: 110px; max-width: 100%;' width='27' alt='image' title='image')
+                                img(src='./images/staffLogo.svg' style='display: block; height: auto; border: 0; width: 110px; max-width: 100%;' width='27' alt='image' title='image')
                       td.column.column-2.last(width='50%' style='mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;padding-top:11px')
                         table.social-table(border='0' cellpadding='0' cellspacing='0' role='presentation' align='right' style='mso-table-lspace: 0pt; mso-table-rspace: 0pt;')
                           tr
