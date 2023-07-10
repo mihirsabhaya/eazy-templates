@@ -1,0 +1,193 @@
+doctype html
+head
+  title
+  meta(http-equiv='Content-Type' content='text/html; charset=utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  //if mso
+    xml
+      o:officedocumentsettings
+        o:pixelsperinch 96
+        o:allowpng
+  // [if !mso] <!
+  // <![endif]
+  style.
+    @font-face {
+        font-family:'Open Sans', sans-serif;
+        src: url("https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans&family=Poppins&display=swap");
+    }
+
+    * {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    }
+    body {
+    margin: 0;
+    padding: 0;
+    }
+    a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: inherit !important;
+    }
+    #MessageViewBody a {
+    color: inherit;
+    text-decoration: none;
+    }
+    p {
+    line-height: inherit
+    }
+    @media (max-width:700px) {
+    .desktop_hide table.icons-inner {
+    display: inline-block !important;
+    }
+    .icons-inner {
+    text-align: center;
+    }
+    .icons-inner td {
+    margin: 0 auto;
+    }
+    .row-content {
+    width: 100% !important;
+    }
+    .reverse {
+    display: table;
+    width: 100%;
+    }
+    .reverse .column.last {
+    display: table-header-group !important;
+    }
+    .row-1 td.column.first>table,
+    .row-1 td.column.last>table {
+    padding-left: 0;
+    padding-right: 0;
+    }
+    }
+  
+  - var customer_name = 'Abram'
+  - var reset_link = "#"
+  - var support_email = "upport@eazy.com"
+  - var support_numbar = "+1 203 456 6533"
+  - 
+    var staff_details = 
+    {
+        staff_name:"Sayad Massod",
+        phone_number:"+1 203 232 3234",
+        email:"sayad.massod@gmail.com",
+        country:"India",
+        city:"Bangalore",
+        store_name:"The Clean Team",
+    }
+  - var username = "Xxxxxx"
+  - var password = "Xxxxxx"
+  - var android_app_link = "[App Link]"
+  - var ios_app_link = "[App Link]"
+
+
+table.nl-container(width='100%' border='0' cellpadding='0' cellspacing='0' role='presentation' style='mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #FFFFFF;')
+  tbody
+    tr
+      td
+        table.row.row-1.mobile_hide(align='center' width='100%' border='0' cellpadding='0' cellspacing='0' role='presentation' style='mso-table-lspace: 0pt; mso-table-rspace: 0pt;')
+          tbody
+            tr
+              td
+                table.row-content.stack(align='center' border='0' cellpadding='0' cellspacing='0' role='presentation' style='mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #ffffff; width: 700px;background-color: #2F8AFF')
+                  tbody
+                    tr.reverse
+                      td.column.column-1.first(width='50%' style='mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;padding: 60px 40px 20px 40px')
+                        table.image_block(width='100%' border='0' cellpadding='0' cellspacing='0' role='presentation' style='mso-table-lspace: 0pt; mso-table-rspace: 0pt;')
+                          tr
+                            td(style='width:100%;padding:0px;padding-top:5px;padding-bottom:5px;')
+                              div(style='line-height:10px')
+                                img(src='./images/staffLogo.svg' style='display: block; height: auto; border: 0; width: 110px; max-width: 100%;' width='27' alt='image' title='image')
+                        table.paragraph_block(width='100%' border='0' cellpadding='10' cellspacing='0' role='presentation' style='mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;')
+                          tr
+                            td(style="padding:0")
+                              div(style="padding-top:25px;font-weight:400;line-height:120%;text-align:left;direction:ltr;letter-spacing:0px;")
+                                p(style='margin: 0;font-size:22px;')
+                                  | Dear #{customer_name}
+                                p(style="font-size:14px;margin-bottom:0")
+                                  | Thank you for signing up on Eazy as a staff for Store name . The details we received are as follows.
+        table.row.row-3(align='center' width='100%' border='0' cellpadding='0' cellspacing='0' role='presentation' style='mso-table-lspace: 0pt; mso-table-rspace: 0pt;')
+          tbody
+            tr
+              td
+                table.row-content.stack(align='center' border='0' cellpadding='0' cellspacing='0' role='presentation' style='mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; width: 700px;')
+                  tbody
+                    tr
+                      td.column.column-1(width='100%' style='mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;')
+                        table.paragraph_block(width='100%' border='0' cellpadding='10' cellspacing='0' role='presentation' style='mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;')
+                          tr
+                            td(style="padding:20px 40px;color:#333333")
+                              div(style="background-color:#F4F6FD;color:color:#242A4B;;font-size:13px;font-weight:400;padding:20px;border-radius:15px;")
+                                h6(style="color:#949CBC;font-size:11px;margin-top:0;margin-bottom:8px;") REGISTRATION DETAILS:
+                                div(style="color:#484848;margin-bottom:3px;") 
+                                  span Staff Name: 
+                                  span(style="font-weight:bold;") #{staff_details.staff_name}
+                                div(style="color:#484848;margin-bottom:3px;")
+                                  span Phone Number: 
+                                  span(style="font-weight:bold;") #{staff_details.phone_number}
+                                div(style="color:#484848;margin-bottom:3px;")
+                                  span Email Id: 
+                                  span(style="font-weight:bold;") #{staff_details.email}
+                                div(style="color:#484848;margin-bottom:3px;")
+                                  span Country: 
+                                  span(style="font-weight:bold;") #{staff_details.country}
+                                div(style="color:#484848;margin-bottom:3px;")
+                                  span City:  
+                                  span(style="font-weight:bold;") #{staff_details.city}
+                                div(style="color:#484848;margin-bottom:3px;")
+                                  span Store Name: 
+                                  span(style="font-weight:bold;") #{staff_details.store_name}
+                                p(style='margin-top: 8px;color:#242A4B;') 
+                                  | At Eazy Services, we prioritize excellence and customer satisfaction. Your expertise and commitment to delivering exceptional services make you a valuable addition to our platform.
+                                p(style='margin-top: 8px;color:#242A4B;margin-bottom:13px;') 
+                                  |  To get started, please log in to your account using the following links and credentials:
+                                div(style="color:#484848;margin-bottom:3px;")
+                                  span(style="font-weight:bold;") Username - 
+                                  span(style="font-weight:bold;") #{username}
+                                div(style="color:#484848;margin-bottom:3px;")  
+                                  span(style="font-weight:bold;") Password - 
+                                  span(style="font-weight:bold;") #{password}
+                                p(style='margin-top: 18px;color:#242A4B;margin-bottom:13px;') 
+                                  |  You can also download the apps using the links given below:
+                                div(style="color:#484848;margin-bottom:3px;")  
+                                  span(style="font-weight:bold;") Android App - 
+                                  span(style="font-weight:bold;") #{android_app_link}
+                                div(style="color:#484848;margin-bottom:3px;")  
+                                  span(style="font-weight:bold;") Ios App - 
+                                  span(style="font-weight:bold;") #{ios_app_link}
+                                p(style='margin-bottom: 0;margin-top:20px;color:#242A4B;')
+                                  | From there, you can update your profile, manage your availability, and start accepting service requests from customers in need.
+                              p(style="font-size:14px;") Thank you for choosing Eazy services. we value your interest in partnering with us and look forward to the possibility of working together to provide exceptional services to our customers.
+                              p(style="font-size:14px;margin-bottom:0") Best Regards,
+                                br
+                                | Team Eazy
+
+        table.row.row-4(align='center' width='100%' border='0' cellpadding='0' cellspacing='0' role='presentation' style='mso-table-lspace: 0pt; mso-table-rspace: 0pt;')
+          tbody
+            tr
+              td
+                table.row-content(align='center' border='0' cellpadding='0' cellspacing='0' role='presentation' style='mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; width: 700px;background-color:black;padding:20px 40px')
+                  tbody
+                    tr
+                      td.column.column-1(width='86%' style='mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: bototm; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;')
+                        table.image_block(width='100%' border='0' cellpadding='0' cellspacing='0' role='presentation' style='mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;')
+                          tr
+                            td(style='padding:0px;')
+                              div(style='line-height:10px')
+                                img(src='./images/staffLogo.svg' style='display: block; height: auto; border: 0; width: 110px; max-width: 100%;' width='27' alt='image' title='image')
+                      td.column.column-2.last(width='50%' style='mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;padding-top:3px')
+                        table.social-table(border='0' cellpadding='0' cellspacing='0' role='presentation' align='right' style='mso-table-lspace: 0pt; mso-table-rspace: 0pt;')
+                          tr
+                            td(style='padding:0 0 0 0px;')
+                              a(href='#' target='_blank')
+                                img(src='./images/facebookIcon.svg' width='20' height='20' alt='Facebook' title='facebook' style=' height: auto; border: 0;')
+                            td(style='padding:0 0 0 20px;')
+                              a(href='#' target='_blank')
+                                img(src='./images/instagramIcon.svg' width='20' height='20' alt='Instagram' title='instagram' style='height: auto; border: 0;')
+                            td(style='padding:0 0 0 20px;')
+                              a(href='#' target='_blank')
+                                img(src='./images/twitterIcon.svg' width='20' height='20' alt='Instagram' title='instagram' style='height: auto; border: 0;')
+                            td(style='padding:0 0 0 20px;')
+                              a(href='#' target='_blank')
+                                img(src='./images/youtubeIcon.svg' width='20' height='20' alt='Instagram' title='instagram' style='height: auto; border: 0;')
