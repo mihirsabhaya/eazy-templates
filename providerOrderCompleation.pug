@@ -111,6 +111,7 @@ head
   
   - var business_owner_firstname = 'Abram'
   - var business_owner_lastname = 'Qureshi'
+  - var order_number = 'Qureshi'
   - var customer_previous_email_address = 'abram.qureshi@gmail.com'
   - var customer_new_email_address = 'qureshi.abram@gmail.com'
   - var customer_id = '123456789A'
@@ -150,7 +151,7 @@ table.nl-container(width='100%' border='0' cellpadding='0' cellspacing='0' role=
                                 p(style='margin: 0;font-size:22px;')
                                   | Hello #{business_owner_lastname}
                                 p(style="font-size:14px;margin-bottom:0")
-                                  | We are pleased to inform you that a new service order has been received. Please review the order details below and take the necessary actions to ensure a smooth and successful order fulfillment process.
+                                  | We are pleased to inform you that your service order ##{order_number} has been successfully completed. We would like to take this opportunity to thank you for choosing Eazy Services for recieving your service orders.
         table.row.row-3(align='center' width='100%' border='0' cellpadding='0' cellspacing='0' role='presentation' style='mso-table-lspace: 0pt; mso-table-rspace: 0pt;')
           tbody
             tr
@@ -261,24 +262,22 @@ table.nl-container(width='100%' border='0' cellpadding='0' cellspacing='0' role=
                                                   table(style="width:100%;color:#333333") 
                                                     tbody   
                                                     tr 
-                                                        h6(style="color:#949CBC;margin-bottom:15px;font-size:10px") PAYMENT BREAKDOWN
+                                                        h6(style="color:#949CBC;margin-bottom:15px;font-size:10px") PAYMENT BREAKDOWN DETAILS
                                                     tr 
-                                                      td(style="display:inline-block;font-weight:bold;width:100%;padding-bottom:5px;") Partial Payment
+                                                      td(style="display:inline-block;width:100%;padding-bottom:5px;") Partial Payment
                                                       td :
-                                                      td(style="display:inline-block;font-weight:bold;width:100%;text-align:right;") $100.00
+                                                      td(style="display:inline-block;width:100%;text-align:right;") $100.00
                                                 td(style="width:10%")
                                                 td.amontDueContainer(style="vertical-align:top;width:40%;")
                                                   table(style="width:100%;color:#333333;vertical-align:top;") 
                                                     tbody 
                                                       tr 
-                                                        h6(style="color:#949CBC;margin-bottom:15px;font-size:10px") AMOUNT DUE
+                                                        h6(style="color:#949CBC;margin-bottom:15px;font-size:10px") REMAINING AMOUNT DUE
                                                       tr 
-                                                        td(style="display:inline-block;font-weight:bold;width:100%;") Cash
+                                                        td(style="display:inline-block;width:100%;") Cash
                                                         td :
-                                                        td(style="display:inline-block;font-weight:bold;width:100%;text-align:right;") $150.00
+                                                        td(style="display:inline-block;width:100%;text-align:right;") $150.00
 
-
-                                          
 
 
 
@@ -295,13 +294,10 @@ table.nl-container(width='100%' border='0' cellpadding='0' cellspacing='0' role=
                             td(style="padding:20px 40px;")
                               div(style="background-color:#F4F6FD;color#242A4B;font-size:13px;font-weight:400;padding:20px;border-radius:15px;")
                                 p(style='margin: 0;')
-                                  | Please review the order details carefully and ensure that all necessary resources, inventory, or equipment are available to fulfill the order on time. Take note of any special instructions or requirements provided by the customer.
+                                  | If you have any questions or require further assistance regarding the completed service, please do not hesitate to reach out to our customer support team at #{customer_support_email}/#{customer_support_phone}. We are always here to address any concerns you may have. 
                                 p(style='margin-bottom: 0;margin-top:20px;')
-                                  | Assigned team members or staff are requested to take immediate action to prepare the service order.
-                                p(style='margin-bottom: 0;margin-top:20px;')
-                                  | If you have any questions or require clarification regarding the order, please reach out to the customer directly or contact our customer support team at #{customer_support_email}/#{customer_support_phone}.
-                              p(style="font-size:14px;color:#333333")  We appreciate your attention and dedication to providing excellent service to our valued customers. Your prompt action and efficient handling of this order will contribute to a positive customer experience. 
-                              p(style="font-size:14px;color:#333333")  Thank you for your cooperation and commitment to maintaining our high service standards. 
+                                  | We value your feedback as it helps us improve. We would greatly appreciate it if you could take a moment to provide us with your feedback regarding your service experience.
+                              p(style="font-size:14px;color:#333333")  Once again, we thank you for choosing Eazy Services. It has been a pleasure, and we look forward to providing you with more service requests.
                               p(style="font-size:14px;margin-bottom:0;color:#333333;") Best Regards,
                                 br
                                 | Team Eazy
